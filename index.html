@@ -1,5 +1,4 @@
-
-<html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -22,9 +21,10 @@
             <button type="submit">Iniciar sesión</button>
         </form>
         <p id="message"></p>
+        <p><a href="#" id="showRegister">¿No tienes una cuenta? Regístrate aquí</a></p>
         <hr>
-        <h2>Registrarse</h2>
-        <form id="registerForm">
+        <h2 id="registerTitle" style="display: none;">Registrarse</h2>
+        <form id="registerForm" style="display: none;">
             <div class="form-group">
                 <label for="regUsername">Nombre de usuario:</label>
                 <input type="text" id="regUsername" name="regUsername" required>
