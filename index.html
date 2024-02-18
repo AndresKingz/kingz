@@ -1,9 +1,10 @@
+
 <html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
+    <title>Iniciar sesión o registrarse</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,6 +22,23 @@
             <button type="submit">Iniciar sesión</button>
         </form>
         <p id="message"></p>
+        <hr>
+        <h2>Registrarse</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="regUsername">Nombre de usuario:</label>
+                <input type="text" id="regUsername" name="regUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Contraseña:</label>
+                <input type="password" id="regPassword" name="regPassword" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
