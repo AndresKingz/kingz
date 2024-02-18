@@ -15,6 +15,12 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
 });
 
+document.getElementById("showRegister").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("registerTitle").style.display = "block";
+    document.getElementById("registerForm").style.display = "block";
+});
+
 document.getElementById("registerForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var regUsername = document.getElementById("regUsername").value;
