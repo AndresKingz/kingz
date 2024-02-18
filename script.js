@@ -17,8 +17,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
 document.getElementById("showRegister").addEventListener("click", function(event) {
     event.preventDefault();
-    document.getElementById("registerTitle").style.display = "block";
-    document.getElementById("registerForm").style.display = "block";
+    document.getElementById("registerPanel").style.display = "block";
+    window.location.href = "#registerPanel";
 });
 
 document.getElementById("registerForm").addEventListener("submit", function(event) {
@@ -31,4 +31,6 @@ document.getElementById("registerForm").addEventListener("submit", function(even
     // Por ejemplo, puedes enviar los datos del formulario a un servidor
     // y manejar el registro allí, luego redirigir al usuario a la página de inicio de sesión
     alert("Registrando usuario: " + regUsername + ", Correo electrónico: " + email + ", Contraseña: " + regPassword);
+    // Redirigir al usuario a la sección de inicio de sesión después del registro
+    window.location.href = "#loginForm";
 });
