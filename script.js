@@ -34,3 +34,4 @@ document.getElementById("registerForm").addEventListener("submit", function(even
     // Redirigir al usuario a la sección de inicio de sesión después del registro
     window.location.href = "#loginForm";
 });
+
